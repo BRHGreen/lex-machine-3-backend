@@ -4,16 +4,23 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ./server.js localhost 4000"
+    "start": "npm run build && nodemon dist/index.js",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.0.2",
-    "pg-promise": "^8.5.2"
+    "pg": "^7.6.1",
+    "pg-hstore": "^2.3.2",
+    "pg-promise": "^8.5.2",
+    "sequelize": "^4.41.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "nodemon": "^1.18.7"
   }
 }
