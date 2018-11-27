@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./server.js localhost 4000"
+  },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.0.2",
     "pg-promise": "^8.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
   }
 }
