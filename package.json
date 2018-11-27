@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "npm run build && nodemon dist/index.js",
     "build": "babel lib -d dist",
-    "serve": "node dist/index.js"
+    "serve": "node dist/index.js",
+    "start": "npm run build && nodemon dist/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
